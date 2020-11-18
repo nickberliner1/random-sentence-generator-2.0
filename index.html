@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./main.css">
 
-    <title>Nick's OC Project 5</title>
+    <title>Funny Question Generator</title>
 
 
       </head>
 
   <body>
-    <div>
-      <label for="customname">Enter custom name:</label>
-      <input id="customname" type="text" placeholder="Bob">
+    <div class="everything">
+        <div class="name">
+          <label for="customname">Enter custom name:</label>
+          <input id="customname" type="text" placeholder="Bob">
+        </div>
+        <div class="checkboxes">
+          <label for="us">US</label><input id="us" type="radio" name="usfr" value="us" checked>
+          <label for="fr">FR</label><input id="fr" type="radio" name="usfr" value="fr">
+        </div>
+        <div class="amount">
+          <input id="quoteNumber" type="number" min="1" max="5" step="1" value="1">
+        </div>
+        <div class="generate">
+          <button class="generate">Generate</button>
+        </div>
+      
+        <div class="story"></div>
+
+
+
+        <a href=# id="close-window">Leave this place and move on with your life</a>
     </div>
-    <div>
-      <label for="us">US</label><input id="us" type="radio" name="usfr" value="us" checked>
-      <label for="fr">FR</label><input id="fr" type="radio" name="usfr" value="fr">
-    </div>
-    <div>
-      <input id="quoteNumber" type="number" min="1" max="5" step="1" value="1">
-    </div>
-    <div>
-      <button class="generate">Generate</button>
-    </div>
-  
-    <div class="story"></div>
 
-
-
-    <a href=# id="close-window">Leave this place and move on with your life</a>
-
-
+    <script>"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"</script>
     <script src="js/javascript.js"></script>
   </body>
 </html>
