@@ -10,18 +10,14 @@ let insertX = ['dogs ','rocks ','toilets ', 'frogs ', 'Italians ', 'famous movie
 let insertY = ['can jump directly into ','are terrified of ', 'don\'t get along well with ', 'sing constantly at ', 'explode when mixed with '];
 let insertZ = ['spiders?','monsters?','life-sized chicken nuggets?', 'really big rocks?', 'socks?', 'squirrels?', 'camouflaged leprechauns?'];
 
-
 // Array to structure the other arrays
 let inserts = [storyText, insertX, insertY, insertZ];
-
-
 
 // Function that will take random array parts
 function randomValueFromArray(array){
   let random = Math.floor(Math.random() * array.length);
   return array[random];
 }
-
 
 // Function that puts all the pieces of the story together
 function getRandomQuote(sentenceParts) {
@@ -35,14 +31,12 @@ function getRandomQuote(sentenceParts) {
 // Function that creates a new story and allows for swtiching between US and FR
 function getQuote() {
   let newStory = getRandomQuote(inserts);
-
-
+  
   // custom name field
   if(customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace('Bob',name);
   }
-
 
   // Section of switching things into the French version 
   if(document.getElementById("fr").checked) {
@@ -67,7 +61,6 @@ generate.addEventListener('click', () => {
     story.innerHTML += "<p>" + getQuote() + "</p>";
   }
 });
-
 
 // close tab 
 document.getElementById("close-window").addEventListener("click", function(){ 
